@@ -1,0 +1,117 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>Hurtownia</Database>
+    <Server>localhost</Server>
+    <ConnectionString>DataSource=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>XJeOgAJNOguzzH9PUEc4zQTU6/A=2017-04-26 16:38:502017-04-26 16:35:32</TimeStamp>
+        <ID>
+          <String>Baza Relacyjna</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>IPfaXlEb8Ebpi2C31yAShXa2uKU=2017-03-29 16:50:342017-04-26 16:35:32</TimeStamp>
+        <ID>
+          <String>Baza Relacyjna</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>88lK9x3kA/VAY5PKPjoheFk3f8w=2017-04-05 17:22:302017-04-26 16:35:32</TimeStamp>
+        <ID>
+          <String>Baza Relacyjna 1</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>JES6GpYC1PafMpoi0WRZ5VtikN8=2017-03-29 16:50:342017-04-26 16:35:32</TimeStamp>
+        <ID>
+          <String>Towar</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>dCHLcgKXdz4Bc7jNrVOzxd5U73w=2017-03-29 17:17:542017-04-26 16:35:32</TimeStamp>
+        <ID>
+          <String>Towar 1</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>2U72jM3jqvsr1EXLw7N+1Pn4reo=2017-03-29 17:20:042017-04-26 16:35:32</TimeStamp>
+        <ID>
+          <String>Towar 2</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>QSNxxvSXiDfFc6i+B5lz+ZA4MwA=2017-03-29 17:34:202017-04-26 16:35:32</TimeStamp>
+        <ID>
+          <String>Osoby</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>DQqDxL1xqoqJ5DhVVETlidcSx3A=2017-03-29 17:42:082017-04-26 16:35:32</TimeStamp>
+        <ID>
+          <String>HierarchiaPrac</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Lx4QIZ3WUEevXT2j5hls/c8CLw0=2017-04-05 17:34:042017-04-26 16:35:32</TimeStamp>
+        <ID>
+          <String>Towar 3</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>h6mcKakT8CIIV79r/s5QGTgwTmw=2017-04-26 17:24:212017-04-26 16:35:32</TimeStamp>
+        <ID>
+          <String>Czas</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>KewXIYIkz0ktam584Ubt2CRKA5U=2017-03-29 16:53:022017-04-26 16:35:328Gn5BsTuoJ+OwhpJbllCk/O8rIE=2017-03-29 16:53:022017-04-26 16:35:32</TimeStamp>
+        <ID>
+          <String>Baza Relacyjna</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>PYTwACtHFuzn+K6g89bLrZpDBRQ=2017-04-26 17:24:212017-04-26 16:35:32h+fNXtTlbsMNic+JL/zgfWR3yO8=2017-03-29 17:20:042017-04-26 16:35:32</TimeStamp>
+        <ID>
+          <String>Baza Relacyjna 1</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>7vtjv5shJJKdccvd74Bgn9Sib2U=2017-03-22 17:27:562017-04-26 16:35:32</TimeStamp>
+      <ID>
+        <String>Hurtownia</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2017-04-26T15:24:22.57Z</LastDeployed>
+</DeploymentSnapshot>

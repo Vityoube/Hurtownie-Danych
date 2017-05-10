@@ -1,0 +1,139 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="9af19016-7010-41bd-9965-d3de221a83e5" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Baza Relacyjna</ID>
+  <Name>Baza Relacyjna</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="a08f9826-431b-40d1-85b3-03cd5cf08974">
+      <ID>Towar</ID>
+      <Name>Towar</Name>
+      <DimensionID>Towar</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="2fc48d39-7563-4897-bec3-1dce0baac108">
+          <AttributeID>Id Towaru</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="eab292c8-3991-4d95-8f18-ef4f5a08e2c8">
+          <AttributeID>Nazwa Kategorii</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="087a52cd-9c6e-4046-ae22-5ea1d2846ebd">
+          <AttributeID>Nazwa Producenta</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a6dc7830-5576-4986-b7e2-1777da057c45">
+          <AttributeID>Miasto</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="466bce0e-49e7-4009-a265-a20d7afb633d">
+          <AttributeID>Wojewodztwo</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="9a16b44b-245c-41a4-aed8-f21a81047ef6">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="6514abca-c7f1-48a2-81ac-9871d4cc1146">
+          <HierarchyID>Hierarchy 1</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="c689fbf6-d380-479d-bec4-4f0ed44cf013">
+      <ID>Transakcje</ID>
+      <Name>Transakcje</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="581c9ddf-9c66-47b7-bb7c-a9ecebd2c08e">
+          <ID>Szt</ID>
+          <Name>Szt</Name>
+          <Source dwd:design-time-name="0c405373-389e-4b05-a7a3-10ee9c8c33d9">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="7b235b3b-834b-49e0-b475-24fba4b6cc0c">
+              <TableID>dbo_Transakcje</TableID>
+              <ColumnID>szt</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="c69f8735-3de8-4867-8c83-7d4a311c1a9d">
+          <ID>Transakcje Count</ID>
+          <Name>Transakcje Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="cbde96de-6374-41f4-af08-efe0575dfd11">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="625c88e4-a89e-4be9-8291-34b4249ee7a7">
+              <TableID>dbo_Transakcje</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="02452f01-5186-430f-be3a-cd1c187cd166">
+          <CubeDimensionID>Towar</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="5e6abead-b932-4787-ba88-e8c3f873b179">
+              <AttributeID>Id Towaru</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="61d8a0f8-ecf1-40bf-ae2e-e3cb1411ce1d">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="98b9e185-9316-4db6-bc72-a7c3c6034237">
+                    <TableID>dbo_Transakcje</TableID>
+                    <ColumnID>IdTowaru</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="e0b6d7c1-9297-4f38-9b5a-006308f69e7d">
+    <DataSourceViewID>Baza Relacyjna</DataSourceViewID>
+  </Source>
+</Cube>
